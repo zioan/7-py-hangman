@@ -8,14 +8,16 @@ word_length = len(chosen_word)
 lives = 6
 
 print(logo)
-print(chosen_word)
+# print(chosen_word)
+print(f"My word have {word_length} letters.")
 
 
 display = []
 for letter in range(word_length):
     display += '_'
 
-print(display)
+word = ' '.join(display)
+print(word)
 
 
 while not game_over:
@@ -42,4 +44,5 @@ while not game_over:
         print("You win!")
 
     print(stages[lives])
-    print(display)
+    word = ' '.join(display)
+    print(word)
